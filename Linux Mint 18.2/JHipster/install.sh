@@ -10,6 +10,11 @@ nodejs -v # Prints out the version
 # This will ensure backwards compatability with scripts that still use 'node'.
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
+# Install yarn (for running web server, viewing live changes++)
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn -y
+
 # Install the package manager bower (globally with -g), using npm
 sudo npm install -g bower
 
