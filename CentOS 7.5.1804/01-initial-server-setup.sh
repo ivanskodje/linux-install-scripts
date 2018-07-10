@@ -20,7 +20,7 @@ yum install tree -y
 
 # Install GCC and Java
 # yum install gcc -y
-# yum install java
+# yum install java -y
 
 # Setup a keepalive interval for clients and the server
 echo -e "\nClientAliveInterval 15" >> /etc/ssh/sshd_config
