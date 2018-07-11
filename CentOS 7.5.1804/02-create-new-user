@@ -4,13 +4,12 @@
 # CHANGE THE USERNAME AND PASSWORD!
 
 USERNAME="myuser"
-PASSWORD="mypassword"
 
 ####################################
 
 # Create a new password protected user
 adduser $(USERNAME)
-passwd $(PASSWORD)
+passwd $(USERNAME)
 
 # Give the new user root privileges by adding it to the wheel group (sudo)
 gpasswd -a $(USERNAME) wheel
