@@ -1,15 +1,13 @@
 #!/bin/bash
 ####################################
-# NB:
-# CHANGE THE USERNAME AND PASSWORD!
-
-USERNAME="myuser"
-
-####################################
-
-# Create a new password protected user
-adduser $(USERNAME)
-passwd $(USERNAME)
-
-# Give the new user root privileges by adding it to the wheel group (sudo)
-gpasswd -a $(USERNAME) wheel
+read -e -p "(Recommended) Do you wish to create a new account with sudo permissions? (Y/n) " RESP
+if [ "$RESP" == "n" ] || [ "$RESP" == "N" ]; then
+  echo "Skipping user creation... "
+  exit 1
+elif [ "$RESP" == "y" ] || [ "$RESP" == "Y" ]; then
+    read -e -p "Enter the username you wish to use: " USERNAME
+    echo "Creating a new sudo user by the name $USERNAME"
+    adduser "$USERNAME"
+    passwd "$USERNAME"
+    gpasswd -a "$USERNAME" wheel
+fi
