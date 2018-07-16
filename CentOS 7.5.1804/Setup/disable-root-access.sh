@@ -4,6 +4,11 @@
 #######################################################################################
 
 read -e -p "(Highly Recommended) Would you like to disable remote root access? (Y/n) " RESP
+if [ -z "$RESP" ]; then
+  RESP = "Y"
+fi
+
+
 if [ "$RESP" == "n" ] || [ "$RESP" == "N" ]; then
   echo "Will not disable root access... "
   exit 1

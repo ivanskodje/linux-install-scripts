@@ -1,6 +1,10 @@
 #!/bin/bash
 ####################################
 read -e -p "(Recommended) Do you wish to create a new account with sudo permissions? (Y/n) " RESP
+if [ -z "$RESP" ]; then
+  RESP = "y"
+fi
+
 if [ "$RESP" == "n" ] || [ "$RESP" == "N" ]; then
   echo "Skipping user creation... "
   exit 1
