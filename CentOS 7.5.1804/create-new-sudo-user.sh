@@ -3,6 +3,7 @@
 # bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/create-new-sudo-user.sh)
 #
 
+RESP=""
 read -e -p "(Recommended) Do you wish to create a new account with sudo permissions? (Y/n) " RESP
 if [ -z "$RESP" ]; then
   RESP="y"
