@@ -1,6 +1,6 @@
 #!/bin/bash
 # TO RUN THIS SCRIPT:
-# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/increase-keepalive.sh)
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/disable-root-access.sh)
 #
 
 echo ""

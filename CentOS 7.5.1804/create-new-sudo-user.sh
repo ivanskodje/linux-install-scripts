@@ -5,7 +5,7 @@
 
 read -e -p "(Recommended) Do you wish to create a new account with sudo permissions? (Y/n) " RESP
 if [ -z "$RESP" ]; then
-  RESP = "y"
+  RESP="y"
 fi
 
 if [ "$RESP" == "n" ] || [ "$RESP" == "N" ]; then
