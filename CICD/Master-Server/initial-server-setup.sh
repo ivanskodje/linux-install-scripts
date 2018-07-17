@@ -12,7 +12,7 @@
 # 3. Create SWAP space
 # 4. Create new SUDO user
 # 5. Disable root access
-# 6. Install docker and ansible
+# 6. Install docker
 #######################################################################
 
 # Update system
