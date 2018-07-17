@@ -2,6 +2,9 @@
 # Initial setup for new CentOS 7.5.1804 servers from Digitalocean.com #
 # This runs ON the created machine that will handle CICD.
 #
+# TO RUN THIS SCRIPT:
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CICD/Master-Server/initial-server-setup.sh)
+#
 # Before running any scripts, we make sure our system is up to date.
 # 1. Installs essentials.
 # 2. Setup keepalive to prevent getting disconnected after being idle for a short time.
