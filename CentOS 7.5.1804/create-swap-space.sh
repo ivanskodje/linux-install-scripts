@@ -5,7 +5,7 @@
 
 read -e -p "Do you wish to add a 2 GB SWAP to enhance performance? (Y/n) " RESP
 if [ -z "$RESP" ]; then
-  RESP = "y"
+  RESP="y"
 fi
 
 if [ "$RESP" == "n" ] || [ "$RESP" == "N" ]; then
