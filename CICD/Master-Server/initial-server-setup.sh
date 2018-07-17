@@ -3,6 +3,7 @@
 # This runs ON the created machine that will handle CICD.
 #
 # TO RUN THIS SCRIPT:
+# yum install curl -y
 # bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CICD/Master-Server/initial-server-setup.sh)
 #
 # Before running any scripts, we make sure our system is up to date.
