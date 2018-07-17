@@ -43,13 +43,3 @@ base=https://github.com/docker/machine/releases/download/v0.14.0 && curl -L $bas
 # Print a message with docker-machine version
 echo "Docker-Machine is done installing... "
 docker-machine version
-
-#################################
-# --- ANSIBLE INSTALLATION ---
-# Documentation: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-centos-7
-
-# Ensure CentOS 7 EPEL Repo is installed
-yum install epel-release -y
-
-# Install Ansible
-yum install ansible -y
