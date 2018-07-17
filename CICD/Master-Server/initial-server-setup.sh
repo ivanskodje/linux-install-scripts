@@ -25,7 +25,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scrip
 bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/increase-keepalive.sh)
 
 # 3. Create SWAP space
-bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/create-swap.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/create-swap-space.sh)
 
 # 4. Create new sudo user
 bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/create-new-sudo-user.sh)

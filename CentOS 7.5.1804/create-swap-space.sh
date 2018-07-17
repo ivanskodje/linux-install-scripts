@@ -1,4 +1,8 @@
 #!/bin/bash
+# TO RUN THIS SCRIPT:
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/create-swap-space.sh)
+#
+
 read -e -p "Do you wish to add a 2 GB SWAP to enhance performance? (Y/n) " RESP
 if [ -z "$RESP" ]; then
   RESP = "y"

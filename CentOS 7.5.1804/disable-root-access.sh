@@ -1,13 +1,17 @@
 #!/bin/bash
-#######################################################################################
-# NB: Make sure you have created another user with root permissions (in group wheel)!
-#######################################################################################
+# TO RUN THIS SCRIPT:
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/increase-keepalive.sh)
+#
 
+echo ""
+echo "-----------------------------------------------------------------------------------"
+echo "NB: Make sure you have created another user with root permissions (in group wheel)!"
+echo "-----------------------------------------------------------------------------------"
+echo ""
 read -e -p "(Highly Recommended) Would you like to disable remote root access? (Y/n) " RESP
 if [ -z "$RESP" ]; then
   RESP = "Y"
 fi
-
 
 if [ "$RESP" == "n" ] || [ "$RESP" == "N" ]; then
   echo "Will not disable root access... "

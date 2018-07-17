@@ -1,12 +1,16 @@
 #!/bin/bash
+# TO RUN THIS SCRIPT:
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/increase-keepalive.sh)
+#
+
 read -e -p "Would you like to set the server & client keepalive interval to? (15 seconds) " RESP
 if [ -z "$RESP" ]; then
-  RESP = 15
+  RESP=15
 fi
 
 read -e -p "Would you like to set the server's max alive count to? (5 clients) " RESP2
 if [ -z "$RESP2" ]; then
-  RESP2 = 5
+  RESP2=5
 fi
 
 # Setup a keepalive interval for clients and the server
