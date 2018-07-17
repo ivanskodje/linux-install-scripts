@@ -21,6 +21,15 @@ systemctl start docker
 echo "Docker is done installing... "
 docker version
 
+# Add user to docker group
+read -e -p "Do you wish to add an user to the docker group (y/N)? " RESP
+if [ "$RESP" == "y" ] || [ "$RESP" == "Y" ]; then
+  read -e -p "Which username would you like to add to the docker group? " USERNAME
+  sudo usermod -aG docker $USERNAME
+  echo "Added $USERNAME to the docker group. "
+  echo "Keep in mind that if you added yourself, the changes will not take effect until you logout. "
+fi
+
 ##############################
 # --- DOCKER-COMPOSE INSTALLATION ---
 # Documentation: https://docs.docker.com/compose/install/#install-compose
