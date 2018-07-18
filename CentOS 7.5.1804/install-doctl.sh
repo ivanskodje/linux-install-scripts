@@ -6,14 +6,14 @@
 
 read -e -p "Do you use a 64bit AMD or an 32/64bit Intel computer? (INTEL/amd)" RESP
 if [ -z "$RESP" ]; then
-  RESP = "Intel"
+  RESP="Intel"
 fi
 
 DOWNLOAD_URL = ""
 if [ "$RESP" == "intel" ] || [ "$RESP" == "Intel" ] || [ "$RESP" == "INTEL" ]; then
-  DOWNLOAD_URL = "https://github.com/digitalocean/doctl/releases/download/v1.8.3/doctl-1.8.3-linux-amd64.tar.gz"
+  DOWNLOAD_URL="https://github.com/digitalocean/doctl/releases/download/v1.8.3/doctl-1.8.3-linux-amd64.tar.gz"
 elif [ "$RESP" == "amd" ] || [ "$RESP" == "Amd" ] || [ "$RESP" == "AMD" ]; then
-  DOWNLOAD_URL = "https://github.com/digitalocean/doctl/releases/download/v1.8.3/doctl-1.8.3-linux-386.tar.gz"
+  DOWNLOAD_URL="https://github.com/digitalocean/doctl/releases/download/v1.8.3/doctl-1.8.3-linux-386.tar.gz"
 else
   echo "No valid input given. Cancelling installation of Doctl... "
   exit 1

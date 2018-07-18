@@ -8,7 +8,7 @@ if ! type "doctl" &> /dev/null; then
   echo "You need to install doctl before running this! "
   read -e -p "Do you wish to install doctl (y/n) [n]? " RESP
   if [ "$RESP" == "y" ] || [ "$RESP" == "Y" ]; then
-    bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-doctl.sh)
+    bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-doctl.sh)
   else
     echo "Aborting... "
     exit 1

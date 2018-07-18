@@ -4,7 +4,7 @@
 
 read -e -p "Would you like to install nano, wget, git & tree (Y/n)? " RESP
 if [ -z "$RESP" ]; then
-  RESP = "Y"
+  RESP="Y"
 fi
 
 if [ "$RESP" == "y" ] || [ "$RESP" == "Y" ]; then
