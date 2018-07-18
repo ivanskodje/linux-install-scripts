@@ -20,11 +20,17 @@ else
 fi
 
 # Download file
+echo "Commencing with download... "
 cd ~
 sudo wget "$DOWNLOAD_URL" --no-check-certificate -O "doctl.tar.gz"
 
 # Extract file
+echo "Extracting file... "
 sudo tar -zxvf ~/doctl.tar.gz
 
+echo "Cleaing up... "
+sudo rm ~/doctl.tar.gz
+
 # Move file to bin so that it may be accessed from anywhere
+echo "Moving file to /usr/local/bin for ease of access..."
 sudo mv ~/doctl /usr/local/bin

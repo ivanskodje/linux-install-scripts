@@ -15,6 +15,7 @@ if ! type "doctl" &> /dev/null; then
   fi
 fi
 
+echo "Continuing with droplet creation... "
 # ------------------------------------------
 # DEFAULT DROPLET VARIABLES
 export DROPLET_REGION="ams3"
@@ -172,14 +173,9 @@ function ask_for_droplet_name {
   echo "" #newline
 }
 
-
-function setup_domain {
-
-}
-
-
 # Authenticate user, using a given token (which is asked by doctl)
-# doctl auth init
+echo "Authenticating digitalocean user, using a given token... "
+doctl auth init
 
 # Check if we wanted to skip SKIP_INTERACTION
 handle_skip_interaction
@@ -217,6 +213,3 @@ ask_for_droplet_name
 echo "Creating droplet with the following command: "
 echo "doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS"
 doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS
-
-# Setup domain (if any)
-setup_domain
