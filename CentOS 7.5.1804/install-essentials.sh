@@ -19,4 +19,12 @@ if [ "$RESP" == "y" ] || [ "$RESP" == "Y" ]; then
 
   # Install Tree (in order to view file directory structure by using the command)
   yum install tree -y
+
+  # Enable extras
+  yum install yum-utils -y
+  yum-config-manager --enable extras
+
+  # Setup iptables
+  yum install iptables-services -y
+  
 fi
