@@ -209,7 +209,8 @@ ask_for_ipv6
 # Get droplet name
 ask_for_droplet_name
 
-# Create droplet!
+# Create droplet, after running auth init one more time just in case...!
+doctl auth init
 echo "Creating droplet with the following command: "
 echo "doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS"
 doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS
