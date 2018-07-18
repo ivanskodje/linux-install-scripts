@@ -214,3 +214,11 @@ doctl auth init
 echo "Creating droplet with the following command: "
 echo "doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS"
 doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS
+
+# Connect to droplet as root (root is default)
+# TODO: Replace the need for password by setting up an SSH! digitalocean took 10 minutes or more to send the damn email! Grr.
+echo "----------------------------------------------------------------------"
+echo "| Make sure you have your droplet password at hand before continuing |"
+echo "----------------------------------------------------------------------"
+read -e -p "Press enter to continue... " RESP
+doctl compute ssh $DROPLET_NAME --ssh-user root

@@ -11,6 +11,10 @@
 # 3. Perform initial server setup on the droplet
 #
 # This is still in early Prototyping, and there may (and probably will) be issues.
+#
+###################
+# Shared Variables
+export DROPLET_NAME
 
 # Create droplet with doctl
 bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CICD/Local/create-droplet-using-doctl.sh)
