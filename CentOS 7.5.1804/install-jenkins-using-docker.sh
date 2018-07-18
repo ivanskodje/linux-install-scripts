@@ -5,7 +5,7 @@
 # Make sure docker is available before continuing
 if ! type "docker" &> /dev/null; then
   echo "You need to install docker before running this! "
-  read -e -p "Do you wish to install docker (y/n) [n]? "
+  read -e -p "Do you wish to install docker (y/n) [n]? " RESP
   if [ "$RESP" == "y" ] || [ "$RESP" == "Y" ]; then
     bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-docker.sh)
   else
