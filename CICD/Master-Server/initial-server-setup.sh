@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 #######################################################################
 # Initial setup for new CentOS 7.5.1804 servers from Digitalocean.com #
 # This runs ON the created machine that will handle CICD.
@@ -36,3 +36,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scrip
 
 # 6. Install docker
 bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-docker.sh)
+
+# 7. Install Jenkins
+bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-jenkins-using-docker.sh)
