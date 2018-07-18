@@ -1,4 +1,6 @@
 #!/bin/bash
+# TO RUN THIS SCRIPT:
+# bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CICD/Local/connect-to-droplet.sh)
 #
 # Connect to droplet as root (root is default)
 echo "----------------------------------------------------------------------"

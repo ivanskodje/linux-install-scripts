@@ -1,6 +1,6 @@
 #!/bin/bash
 # TO RUN THIS SCRIPT:
-# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/increase-keepalive.sh)
+# bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/increase-keepalive.sh)
 #
 
 read -e -p "Would you like to set the server & client keepalive interval to? (15 seconds) " RESP

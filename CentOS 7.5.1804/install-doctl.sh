@@ -1,6 +1,6 @@
 #!/bin/bash
 # TO RUN THIS SCRIPT:
-# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-doctl.sh)
+# bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-doctl.sh)
 #
 # Install doct on Linux. Check https://github.com/digitalocean/doctl/releases for specific releases.
 

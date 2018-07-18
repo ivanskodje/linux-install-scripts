@@ -1,6 +1,6 @@
 #!/bin/bash
 # TO RUN THIS SCRIPT:
-# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-jenkins-using-docker.sh)
+# bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-jenkins-using-docker.sh)
 
 # Make sure docker is available before continuing
 if ! type "docker" &> /dev/null; then
@@ -16,6 +16,8 @@ fi
 
 # Setup volume directory for jenkins
 mkdir /home/$USER/jenkins
+
+# Make sure to add permission! By default Docker uses the 1000:1000 user.
 sudo chown 1000:1000 /home/$USER/jenkins
 
 # Install jenkins

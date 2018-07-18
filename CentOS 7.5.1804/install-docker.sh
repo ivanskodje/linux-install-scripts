@@ -1,6 +1,6 @@
 #!/bin/bash
 # TO RUN THIS SCRIPT:
-# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-docker.sh)
+# bash <(curl -H "Cache-Control: no-cache" -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CentOS%207.5.1804/install-docker.sh)
 #
 # Documentation: https://docs.docker.com/install/linux/docker-ce/centos/#install-using-the-repository
 
