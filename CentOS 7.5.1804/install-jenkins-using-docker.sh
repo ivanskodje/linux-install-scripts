@@ -15,10 +15,11 @@ if ! type "docker" &> /dev/null; then
 fi
 
 # Setup volume directory for jenkins
-mkdir /home/$USER/jenkins
+read -e -p "Where do you wish to store the Jenkins volume? " FOLDER_PATH
+mkdir "$FOLDER_PATH"
 
 # Make sure to add permission! By default Docker uses the 1000:1000 user.
-sudo chown 1000:1000 /home/$USER/jenkins
+sudo chown 1000:1000 "$FOLDER_PATH"
 
 # Install jenkins
-docker run --restart=always -d -p 18080:8080 -p 50000:50000 -v  /home/$USER/jenkins:/var/jenkins_home:z --name jenkins jenkins/jenkins
+docker run --restart=always -d -p 18080:8080 -p 50000:50000 -v  "$FOLDER_PATH":/var/jenkins_home:z --name jenkins jenkins/jenkins
