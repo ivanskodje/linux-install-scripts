@@ -9,7 +9,7 @@ if [ -z "$RESP" ]; then
   RESP="Intel"
 fi
 
-DOWNLOAD_URL=""
+DOWNLOAD_URL="https://github.com/digitalocean/doctl/releases/download/v1.8.3/doctl-1.8.3-linux-amd64.tar.gz"
 if [ "$RESP" == "intel" ] || [ "$RESP" == "Intel" ] || [ "$RESP" == "INTEL" ]; then
   DOWNLOAD_URL="https://github.com/digitalocean/doctl/releases/download/v1.8.3/doctl-1.8.3-linux-amd64.tar.gz"
 elif [ "$RESP" == "amd" ] || [ "$RESP" == "Amd" ] || [ "$RESP" == "AMD" ]; then
