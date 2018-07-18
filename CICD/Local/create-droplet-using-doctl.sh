@@ -1,5 +1,8 @@
 #!/bin/bash
 #
+# TO RUN THIS SCRIPT:
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CICD/Local/create-droplet-using-doctl.sh)
+#
 # Make sure doctl is available before continuing
 if ! type "doctl" &> /dev/null; then
   echo "You need to install doctl before running this! "
@@ -170,6 +173,11 @@ function ask_for_droplet_name {
 }
 
 
+function setup_domain {
+
+}
+
+
 # Authenticate user, using a given token (which is asked by doctl)
 # doctl auth init
 
@@ -209,3 +217,6 @@ ask_for_droplet_name
 echo "Creating droplet with the following command: "
 echo "doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS"
 doctl compute droplet create $DROPLET_NAME --region $DROPLET_REGION --image $DROPLET_IMAGE --size $DROPLET_SIZE $ADDITIONAL_ARGS
+
+# Setup domain (if any)
+setup_domain

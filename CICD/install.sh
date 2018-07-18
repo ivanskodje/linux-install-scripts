@@ -1,11 +1,14 @@
 #!/bin/bash
-# This is an auto installer for the CICD setup.
-# This includes creating a new droplet and setting it up so that it is ready with Jenkins.
+# This is an interactive installer for all the CICD scripts.
+#
+# TO RUN THIS SCRIPT:
+# bash <(curl -Ls https://raw.githubusercontent.com/ivanskodje/linux-install-scripts/master/CICD/install.sh)
+#
 #
 # Current behavior:
 # 1. Create droplet from local machine
 # 2. Connect to the new droplet
-# 3. Perform initial server setup
+# 3. Perform initial server setup on the droplet
 #
 # This is still in early Prototyping, and there may (and probably will) be issues.
 
