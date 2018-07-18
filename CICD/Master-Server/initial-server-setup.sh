@@ -1,3 +1,4 @@
+#!/bin/bash 
 #######################################################################
 # Initial setup for new CentOS 7.5.1804 servers from Digitalocean.com #
 # This runs ON the created machine that will handle CICD.
