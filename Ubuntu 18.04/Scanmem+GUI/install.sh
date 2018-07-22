@@ -1,4 +1,3 @@
-
 #!/bin/bash
 APP="Scanmem & GameConqueror GUI for Scanmem"
 
