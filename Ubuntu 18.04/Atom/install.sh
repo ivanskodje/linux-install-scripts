@@ -19,4 +19,4 @@ sudo apt-get update
 echo "Installing $APP... "
 sudo apt-get install atom -y
 
-echo -e "$APP has finished installing.\n\n
+echo -e "$APP has finished installing.\n\n"
