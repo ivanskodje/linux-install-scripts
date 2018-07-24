@@ -11,7 +11,7 @@ sudo add-apt-repository ppa:jtaylor/keepass -y
 sudo apt-get update
 
 echo "Installing dependencies... (needed for KeePassHTTP Plugin)"
-sudo apt-get install mono-complete -y
+sudo apt-get install mono-complete jq -y
 
 echo "Installing $APP... "
 sudo apt-get install keepass2 -y
