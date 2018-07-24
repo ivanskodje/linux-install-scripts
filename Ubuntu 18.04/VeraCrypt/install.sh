@@ -16,6 +16,6 @@ echo "Installing $APP... Continue by interacting with the VeraCrypt installation
 sudo bash veracrypt-1.22-setup-gui-x64
 
 echo "Cleaning files... "
-sudo rm veracrypt-1.22-setup-console-x64 veracrypt-1.22-setup-console-x86 veracrypt-1.22-setup-gui-x64 veracrypt-1.22-setup-gui-x86 veracrypt-1.22-setup.tar.bz2
+sudo rm ~/Downloads/veracrypt-1.22*
 
 echo -e "$APP has finished installing.\n"
