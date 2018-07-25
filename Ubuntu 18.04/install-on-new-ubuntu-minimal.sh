@@ -5,3 +5,7 @@
 sudo apt-get update -y
 
 # TODO: ...
+
+# IntelliJ FIx for alt+ctrl+left/right:
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
