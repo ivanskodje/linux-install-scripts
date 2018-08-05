@@ -1,4 +1,5 @@
 #!/bin/bash
+# Works with Ubuntu 18.04, and Kubuntu 18.04
 APP="KeePass2"
 HOMEPAGE="https://keepass.info/"
 

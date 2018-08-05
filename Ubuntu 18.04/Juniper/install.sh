@@ -14,13 +14,13 @@ git clone https://github.com/russdill/juniper-vpn-py
 cd juniper-vpn-py
 
 # install python dependencies
-sudo apt-get install python-pip -y
-sudo pip install mechanize netifaces pycurl pyasn1-modules urlgrabber
-# sudo apt-get install python-pycurl # (This might not be needed)
+sudo apt-get install python-pip python-pycurl -y
+sudo pip install mechanize netifaces pyasn1-modules urlgrabber
 
 # Login as root
 sudo su
 
+# (Does not run automatically below until a solution has been found to make it do so!)
 # Run script
 read -e -p "Please enter your username: " USERNAME
 read -e -p "Please enter the host (vpn.host.com): " HOST
