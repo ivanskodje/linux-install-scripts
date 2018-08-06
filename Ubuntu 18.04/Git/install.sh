@@ -15,9 +15,9 @@ read -e p- "Register your git name (John Doe): " NAME
 git config --global user.name "$NAME"
 
 read -e -p "Register your git account-email (your@email.com): " EMAIL
-git config --global user.name "$EMAIL"
+git config --global user.email "$EMAIL"
 
-echo -e -p "Enabling global credential helper cache... "
+echo "Enabling global credential helper cache... "
 git config --global credential.helper cache
 
 echo -e "$APP has finished installing.\n\n"
