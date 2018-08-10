@@ -1,4 +1,6 @@
 #!/bin/bash
+# Works with Ubuntu 18.04, and Kubuntu 18.04
+
 APP="Google Chrome Browser"
 HOMEPAGE="https://www.google.com/chrome/"
 

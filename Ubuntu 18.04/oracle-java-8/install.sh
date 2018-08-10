@@ -1,4 +1,5 @@
 #!/bin/bash
+# Works with Ubuntu 18.04, and Kubuntu 18.04
 # Install instructions from: https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/
 
 APP="Oracle Java 8"
