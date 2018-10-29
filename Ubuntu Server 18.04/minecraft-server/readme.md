@@ -4,11 +4,11 @@ Make sure to select **Install Ubuntu** during the install process, and not any o
 
 After you have gained access and logged in, continue.
 
-You can start by making sure the server is up to date.  
+Update the server.  
 `sudo apt-get update && sudo apt-get upgrade -y`
 
 ## Secure the server
-Disable root. No exceptions.  
+Disable root. No exceptions.
 `sudo passwd -l root`
 
 ## Install Java
