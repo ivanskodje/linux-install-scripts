@@ -5,7 +5,7 @@
 # (MUST BE RUN AS ROOT)
 ############################ 
 RESP=""
-read -e -p "(Recommended) Do you wish to create a new account with sudo permissions? (Y/n) " RESP
+read -e -p "(Recommended) Do you wish to create a new user? (Y/n) " RESP
 if [ -z "$RESP" ]; then
   RESP="y"
 fi
